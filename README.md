@@ -1,14 +1,17 @@
-# Mobot
+# SteamLowestPriceBot
 
-一个摸鱼的 Telegram bot。
+A bot to sent messages to users when the games in their *Steam* wishlist hit the lowest price.
+
+# Requiremts
+
+* python2.7
+* Reids
 
 # Usage
 
+* install redis
+* pip install -r requirements
 * `cp config.json.example config.json`
 * Fill values into `config.json`
-* Run `docker-compose up`
+* Run bot.py
 
-# Notice
-
-* We use Python 3 latest version (docker image `python:3-alpine`).
-* Redis is currently not used, but is prepared for a task queue system.

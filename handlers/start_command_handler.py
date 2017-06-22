@@ -1,31 +1,11 @@
+# _*_ coding:utf-8 _*_
 from telegram.ext import CommandHandler
 from .utils import db_get_list, db_set_list, db_remove,\
     get_price, set_legion, get_legion
 
 
-start_text = """
-*講粗口*
-    *屌人*
-        `/人 人名`
-            增加可以屌啲人名，可以多个，半角空格隔开
-        `/屌人 模板`
-            模板为粗口，必须有一组{}用于插入人名
-    *屌地方*
-        `/地方 地名`
-            参照屌人
-        `/屌地方 模板`
-            参照屌人
-
-*查steam遊戲價錢*
-    *增加关注游戏*
-        `/add 游戏id 或 bundle/bundle id`
-    *去除关注游戏*
-        `/remove 游戏id 或 bundle/bundle id`
-    *问价钱*
-        `/price`
-    *設定地區*
-        `/region 地區代號`
-            支那：cn, 日本：jp，米國：us，其餘自行查閱
+start_text = u"""Just tell me your *Steam* username.
+告訴我你的*steam*帳號。
 """
 
 
