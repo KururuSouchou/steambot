@@ -10,7 +10,7 @@ A bot to sent messages to users when the games in their *Steam* wishlist hit the
 # Usage
 
 * install redis
-* pip install -r requirements
+* `pip install -r requirements`
 * `cp config.json.example config.json`
 * Fill values into `config.json`
 * Run bot.py
