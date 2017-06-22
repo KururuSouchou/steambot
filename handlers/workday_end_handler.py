@@ -20,7 +20,7 @@ def set_user_id(bot, update):
     u = User(steam_user, api_key)
     try:
         username = u.check_account()
-        set_user(update.message.from_user.id, steam_user)
+        set_user(update.message.chat_id, steam_user)
         bot.send_message(
             chat_id=update.message.chat_id,
             text=u"Weclome, {}".format(username),
